@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<title>GenShaders</title>
+		<link rel=stylesheet href="style.css" type="text/css">
+		<script src="jquery-1.7.1.min.js"></script>
+		<script id="vertex_shader" type="x-shader/x-vertex">
+		precision highp float;
+		attribute vec3 pos;
+
+		void main() {
+			gl_Position = vec4(pos.xyz-1.0, 1);
+		}
+		</script>
+		<script src="genshaders.js"></script>
+	</head>
+	<body>
+		<img id="spinner" src="ajax-loader.gif" style="display: none">
+		<img id="refresh" src="refresh.png">
+		<img id="fullscreen" src="fullscreen.png" style="display: none">
+		<table>
+			<tr>
+				<td class="canvas-container"></td>
+				<td class="canvas-container"></td>
+				<td class="canvas-container"></td>
+				<td class="canvas-container"></td>
+			</tr>
+			<tr>
+				<td class="canvas-container"></td>
+				<td class="canvas-container"></td>
+				<td class="canvas-container"></td>
+				<td class="canvas-container"></td>
+			</tr>
+			<tr>
+				<td class="canvas-container"></td>
+				<td class="canvas-container"></td>
+				<td class="canvas-container"></td>
+				<td class="canvas-container"></td>
+			</tr>
+		</table>
+	</body>
+</html>

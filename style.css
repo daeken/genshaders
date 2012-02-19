@@ -1,0 +1,55 @@
+body {
+	background-color: #2F3340;
+}
+
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#spinner {
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	z-index: 1;
+}
+
+#refresh {
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	z-index: 1;
+}
+
+#fullscreen {
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	z-index: 1;
+}
+
+table {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -347px;
+	margin-left: -815px;
+	width: 1630px;
+	height: 695px;
+}
+
+td {
+	width: 400px;
+	height: 225px;
+	padding: 5px 5px 0px 5px;
+	margin-top: 0;
+}
+
+canvas {
+	z-index: 0;
+}
